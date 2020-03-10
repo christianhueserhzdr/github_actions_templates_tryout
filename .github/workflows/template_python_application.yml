@@ -26,6 +26,7 @@ jobs:
         pip install pipenv
     - name: Install dependencies with pipenv
       run: |
+        pipenv shell
         pipenv install --dev --python `which python`
     - name: Lint with flake8
       run: |
